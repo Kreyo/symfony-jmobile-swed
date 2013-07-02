@@ -1,0 +1,7 @@
+parameters:
+#    swed_j.example.class: Swed\JBundle\Example
+
+services:
+#    swed_j.example:
+#        class: %swed_j.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

@@ -1,0 +1,4 @@
+swed_j:
+    resource: "@SwedJBundle/Resources/config/routing.yml"
+    prefix:   /
+
