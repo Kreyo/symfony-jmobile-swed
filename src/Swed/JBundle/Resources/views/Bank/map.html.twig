@@ -1,0 +1,14 @@
+{% extends 'SwedJBundle:Bank:base.html.twig' %}
+<div data-role="page" id="map">
+    <div data-theme="b" data-role="header">
+        <span class="ui-title">
+        </span>
+        <a data-role="button" href="{{ path('swed_homepage') }}" class="ui-btn-left">
+            Back
+        </a>
+    </div>
+    <div data-role="content">
+        <img src="https://maps.googleapis.com/maps/api/staticmap?center=Riga, Latvia&amp;zoom=14&amp;size=288x200&amp;markers=Darzauglu, 1|University of Latvia|Krisjana Valdemara iela, 1&amp;sensor=false"
+             height="70%" width="100%">
+    </div>
+</div>

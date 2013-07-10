@@ -1,12 +1,11 @@
 {% extends 'SwedJBundle:Bank:base.html.twig' %}
-<!-- CSS for buttons on main page -->
+<!-- CSS for buttons on business main page -->
 <style type="text/css">
         /* setup icon images */
     .ui-icon-profile,
     .ui-icon-payments,
-    .ui-icon-credits,
+    .ui-icon-tasks,
     .ui-icon-exchange,
-    .ui-icon-id,
     .ui-icon-map,
     .ui-icon-contacts{
         width:28px;
@@ -19,40 +18,35 @@
     .ui-icon-payments {background-image: url('{{ asset('img/icons/payments.png') }}');}
     .ui-icon-credits {background-image: url('{{ asset('img/icons/credits.png') }}');}
     .ui-icon-exchange {background-image: url('{{ asset('img/icons/exchange.png') }}');}
-    .ui-icon-id {background-image: url('{{ asset('img/icons/id.png') }}');}
     .ui-icon-map {background-image: url('{{ asset('img/icons/map.png') }}');}
     .ui-icon-contacts {background-image: url('{{ asset('img/icons/contacts.png') }}');}
+    .ui-icon-tasks {background-image: url('{{ asset('img/icons/tasks.png') }}');}
 </style>
 
-jQuery Mobile Buttons - Icon-only
-{% block title %}Main{% endblock %}
+{% block title %}Business{% endblock %}
 {% block body %}
 <!-- Home -->
-  <div data-role="page" id="index">
-    <div data-theme="b" data-role="header">
+<div data-role="page" id="business">
+    <div data-theme="a" data-role="header">
         <span class="ui-title">
         </span>
-        <a data-role="button" href="{{ path('swed_business') }}" class="ui-btn-right">
-            Business
+        <a data-role="button" href="{{ path('swed_homepage') }}" class="ui-btn-right">
+            Normal
         </a>
     </div>
     <div data-role="content">
         <div data-role="navbar">
-        <ul>
             <li><a data-role="button" href="#" data-theme="reset" data-icon="profile">
                 Profile
             </a></li>
+            <li><a data-role="button" href="#" data-theme="reset" data-icon="tasks">
+                Task List
+            </a></li>
             <li><a data-role="button" href="#" data-theme="reset" data-icon="payments">
                 Payments
-            </a>
-            <li><a data-role="button" href="#" data-theme="reset" data-icon="credits">
-                 Credit cards
             </a></li>
             <li><a data-role="button" href="#" data-theme="reset" data-icon="exchange">
                 Exchange rates
-            </a></li>
-            <li><a data-role="button" href="#" data-theme="reset" data-icon="id">
-                Send id number
             </a></li>
             <li><a data-role="button" href="{{ path('swed_map') }}" data-theme="reset" data-icon="map">
                 Map
@@ -60,7 +54,6 @@ jQuery Mobile Buttons - Icon-only
             <li><a data-role="button" href="#" data-theme="reset" data-icon="contacts">
                 Contacts
             </a></li>
-        </ul>
         </div>
     </div>
-  </div>
+</div>

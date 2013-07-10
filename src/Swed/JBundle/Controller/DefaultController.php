@@ -10,4 +10,12 @@ class DefaultController extends Controller
     {
         return $this->render('SwedJBundle:Bank:index.html.twig');
     }
+    public function businessAction()
+    {
+        return $this->render('SwedJBundle:Bank:business.html.twig');
+    }
+    public function mapAction()
+    {
+        return $this->render('SwedJBundle:Bank:map.html.twig');
+    }
 }

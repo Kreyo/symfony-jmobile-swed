@@ -2,10 +2,10 @@ swed_homepage:
     pattern:  /
     defaults: { _controller: SwedJBundle:Default:index }
 swed_business:
-    pattern: /business
+    pattern:  /business
     defaults: { _controller: SwedJBundle:Default:business}
 
 swed_map:
-  pattern: /map
-  defaults: { _controller: SwedJBundle:Default:map }
+    pattern:  /map
+    defaults: { _controller: SwedJBundle:Default:map }
 
